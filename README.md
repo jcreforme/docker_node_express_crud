@@ -53,3 +53,8 @@ the data must be on json format on the body as e.g.:<br />
 
 Postman screenshot
 ![GitHub Logo](/1.png)
+
+To update an employee example
+![GitHub Logo](/2.png)
+
+
