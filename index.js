@@ -1,5 +1,6 @@
-//$ npm init
-//$ npm install --save express mysql body-parser
+// $ npm init
+// $ npm install --save express mysql body-parser
+// nodemon node index.js
 
 const mysql = require('mysql');
 const express = require('express');
