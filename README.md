@@ -12,7 +12,7 @@ $ cd docker_node_express_crud
 
 $ sudo docker-compose up -d
 
-$ cat dump.sql | docker exec -i project_db_1  /usr/bin/mysql -u root --password=password 
+$ cat dump.sql | docker exec -i docker_node_express_crud_db_1  /usr/bin/mysql -u root --password=password 
 
 $ npm init
 
