@@ -15,6 +15,8 @@ $ node index.js
 
 Can browse the app at <http://localhost:3002/employees>
 
+![GitHub Logo](/3.png)
+
 
 # Postman is require to  execute any REST, SOAP, and GraphQL queries.
 Download here: https://www.postman.com/downloads/
@@ -53,6 +55,7 @@ the data must be on json format on the body as e.g.:<br />
 ============================ 
 
 Postman screenshot
+How select all employees example
 ![GitHub Logo](/1.png)
 
 To update an employee example
