@@ -1,3 +1,6 @@
+//$ npm init
+//$ npm install --save express mysql body-parser
+
 const mysql = require('mysql');
 const express = require('express');
 const bodyparser = require('body-parser');
