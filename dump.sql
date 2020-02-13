@@ -31,14 +31,6 @@ CREATE TABLE `employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `employee`
---
-
-INSERT INTO `employee` (`EmpID`, `Name`, `EmpCode`, `Salary`) VALUES
-(1, 'juan carlos', 'EM002', 52000),
-(3, 'juan carlo', 'EM001', 52000);
-
---
 -- Indexes for dumped tables
 --
 
@@ -57,3 +49,16 @@ ALTER TABLE `employee`
 --
 ALTER TABLE `employee`
   MODIFY `EmpID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`EmpID`, `Name`, `EmpCode`, `Salary`) VALUES
+(1, 'carlos', 'EM001', 2000),
+(2, 'Juan carlos', 'EM002', 5200),
+(3, 'Chubaka', 'EM003',  4500),
+(4, 'Pedro', 'EM004',  4700),
+(5, 'Pablo', 'EM005',  8700),
+(6, 'Amtonio', 'EM006', 3400),
+(7, 'Lalo', 'EM007',  6600);  

@@ -1,4 +1,4 @@
-# Steps to run the app
+# Steps to run the app, Please open the terminal and do the steps:
 ```
 $ git clone https://github.com/jcreforme/docker_node_express_crud.git
 
@@ -13,6 +13,7 @@ $ npm install --save express mysql body-parser
 $ node index.js
 ```
 
+Can browse the app at <http://localhost:3002/employees>
 
 
 # Postman is require to  execute any REST, SOAP, and GraphQL queries.
