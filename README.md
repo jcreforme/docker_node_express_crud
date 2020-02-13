@@ -25,6 +25,10 @@ Can browse the app at <http://localhost:3002/employees>
 
 ![GitHub Logo](/3.png)
 
+Can monitor the DB with PhpMyAdmin -uroot -ppassword <br />
+
+Can browse here <http://localhost:8080/>
+![GitHub Logo](/3.png)
 
 # Postman is require to  execute any REST, SOAP, and GraphQL queries.
 Download here: https://www.postman.com/downloads/
