@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+    ports:
+      - ${IP}:8080:80
+    links:
+      - db:db
+
+  db:
+    image: mysql:latest # https://hub.docker.com/_/mysql/ - or mariadb https://hub.docker.com/_/mariadb
+    ports:
+      - ${IP}:3306:3306 # change ip if required
+    restart: always  
+    command: [
+        '--default_authentication_plugin=mysql_native_password',
+        '--character-set-server=utf8mb4',
+        '--collation-server=utf8mb4_unicode_ci'
+    ]
+    volumes:
+      - ./wp-data:/docker-entrypoint-initdb.d
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+
+volumes:
+  db_data:
