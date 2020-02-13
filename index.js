@@ -25,7 +25,6 @@ mysqlConnection.connect((err)=>{
 
 });
 
-app.listen(3002,()=>console.log('Express server is running 100% at port 3002'));
 
 //Get all employees
 app.get('/employees',(req, res)=> {
@@ -65,7 +64,7 @@ app.delete('/employee/:id',(req, res)=> {
 });
 
 //Insert an employee
-app.post('/employees',(req, res)=> {
+app.post('/employee',(req, res)=> {
 	let data = {Name: req.body.Name, EmpCode: req.body.EmpCode, Salary: req.body.Salary };
   	let sql = "INSERT INTO employee SET ?";
 	mysqlConnection.query(sql, data, (err, rows, fields)=>{
@@ -80,7 +79,7 @@ app.post('/employees',(req, res)=> {
 
 
 //Update an employee
-app.put('/employees/:id',(req, res)=> {
+app.put('/employee/:id',(req, res)=> {
 	let sql = "UPDATE employee SET Name='"+req.body.Name+"', EmpCode='"+req.body.EmpCode+"' WHERE EmpID="+req.params.id;
   	
 	mysqlConnection.query(sql, (err, results)=>{
@@ -90,4 +89,7 @@ app.put('/employees/:id',(req, res)=> {
 
 	
 });
+
+app.listen(3002,()=>console.log('Express server is running 100% at port 3002'));
+
 
