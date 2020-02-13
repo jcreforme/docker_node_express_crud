@@ -14,10 +14,6 @@ $ sudo docker-compose up -d
 
 $ cat dump.sql | docker exec -i docker_node_express_crud_db_1  /usr/bin/mysql -u root --password=password 
 
-$ npm init
-
-$ npm install --save express mysql body-parser
-
 $ node index.js
 ```
 
