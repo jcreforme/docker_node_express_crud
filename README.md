@@ -8,6 +8,8 @@
 ```
 $ git clone https://github.com/jcreforme/docker_node_express_crud.git
 
+$ cd docker_node_express_crud
+
 $ sudo docker-compose up -d
 
 $ cat dump.sql | docker exec -i project_db_1  /usr/bin/mysql -u root --password=password 
